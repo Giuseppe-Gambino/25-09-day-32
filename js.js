@@ -51,7 +51,7 @@ function addToCart(book) {
   const ul = document.querySelector("ul");
 
   const li = document.createElement("li");
-  li.innerHTML = `<li class="list-group-item d-flex justify-content-between">${book.title}<i role="button" class="bi bi-trash passCart"></i></li>`;
+  li.innerHTML = `<li class="list-group-item d-flex justify-content-between">${book.title}<span>${book.price}$<i role="button" class="bi bi-trash ms-3 passCart"></i></span></li>`;
 
   ul.appendChild(li);
 
